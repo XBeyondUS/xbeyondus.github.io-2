@@ -1,0 +1,171 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+.column {      
+    float:left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row::after{   /* code for the table */
+    content: "";
+    display: table;
+    clear:both;
+}
+
+.container{  /*for the black bar that displays the footer and nav header of the page */
+    width:150%;
+    height:170px;
+    background-image:linear-gradient(rgb(0, 0, 0),rgb(11, 20, 46) 250%);
+    overflow: ;
+}
+
+
+
+
+
+
+nav /*navigation bar customizations */
+{
+    width:150%;
+    height:100px;
+    background-image:linear-gradient(rgb(0, 0, 0),rgb(11, 20, 46) 250%);
+    overflow: ;
+
+}
+
+ul 
+{
+
+
+}
+
+
+img /*Code for the image on website*/
+{   display:grid;
+    margin-left: auto;
+    margin-right: auto;
+    width:18%;
+    height:25%;
+    border-style:ridge;
+    border-color: yellow;
+}
+
+
+
+
+
+ul li  /*addition navigation styling code */
+{
+    list-style: none;
+    display:inline-block;
+    float:left;
+    line-height: 90px;
+}
+
+ul  li a /* navigation font customizations */
+{
+    text-decoration: none;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+    padding: 0 119px;
+}
+
+ul  li a:hover /* Special effects that occur when cursor is held over any of the navigation buttons */
+{
+    background-color:rgb(18, 18, 32);
+    color:gold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 5px 50px 0 black inset, 0 5px 50px 0 aqua,
+                0 5px 50px 0 white inset, 0 5px 50px 0 aqua;
+                text-shadow: 0 0 5px orangered,
+                0 0 5px orangered ;
+    border-color:red;
+}
+
+
+body  /* code for the size of the entire page itself */
+{
+display:block;
+justify-content: center;
+align-items: center;
+height:2200px;
+background-image:linear-gradient(rgb(27, 8, 53),rgb(148, 42, 0) 250%);
+background-repeat:no-repeat;
+}
+
+
+
+
+h1
+{
+    font-size:170%;
+    color:antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display:grid;
+    text-align: center;
+    font-weight:normal;
+    font-style: italic;
+}
+
+h2
+{
+    font-size:390%;
+  color:yellow;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display:grid;
+  text-align: center;
+  font-weight:normal;
+}
+
+h3
+{
+    display:grid;
+    text-align: center;
+    font-weight:normal;
+    text-decoration: none;
+    font-size: 38px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+    padding: 5 119px;
+}
+
+
+h4 
+{
+    color:white;
+    font-weight:normal;
+    font-size:small;
+}
+
+p{
+    font-size:125%;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display:grid;
+    text-align: center;
+    font-weight:normal;
+}
+
+table /*The entire Table's font and graphics */
+
+{   
+    position:relative;
+    top: 150px;
+    left:650px;
+    color:crimson;
+    font-size:120%;
+    border-style:ridge;
+    border-color:beige;
+    font-weight: 900;
+    background-image:linear-gradient(rgb(25, 9, 48),rgb(11, 20, 46) 250%);
+}
+
+

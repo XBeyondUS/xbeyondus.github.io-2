@@ -1,0 +1,240 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+.container{       /*code for the black bar of the footer and header of the page */
+    width:170%;
+    height:120px;
+    background-image:linear-gradient(rgb(0, 0, 0),rgb(11, 20, 46) 250%);
+    overflow:hidden ;
+}
+
+
+
+nav /*navigation bar customizations */
+{
+    width:150%;
+    height:100px;
+    background-image:linear-gradient(rgb(0, 0, 0),rgb(11, 20, 46) 250%);
+    overflow: hidden;
+
+}
+
+
+
+
+
+
+
+
+ul li  /*addition navigation styling code */
+{
+    list-style: none;
+    display:inline-block;
+    float:left;
+    line-height: 90px;
+}
+
+ul  li a /* navigation font customizations */
+{
+    text-decoration: none;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+    padding: 0 119px;
+}
+
+ul  li a:hover /* Special effects that occur when cursor is held over any of the navigation buttons */
+{
+    background-color:rgb(18, 18, 32);
+    color:gold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 5px 50px 0 black inset, 0 5px 50px 0 aqua,
+                0 5px 50px 0 white inset, 0 5px 50px 0 aqua;
+                text-shadow: 0 0 5px orangered,
+                0 0 5px orangered ;
+    border-color:red;
+}
+
+
+body  /* code for the size of the entire page itself */
+{
+padding: 0;
+margin:0;
+display:block;
+justify-content: center;
+align-items: center;
+height:170vh;
+background-image:linear-gradient(rgb(27, 8, 53),rgb(148, 42, 0) 250%);
+background-repeat:no-repeat;
+}
+
+
+
+.section{   /*code needed for the image slide to be properly placed on the page customizations */
+    margin:0;
+    padding:0;
+    height:130vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.slider{           /*look of the overall image slider itself customizations */
+    width:1190px;
+    height:890px;
+    border-radius: 10px;
+    overflow: hidden;
+     border-color: yellow;
+    border-style: ridge;
+}
+.slide{            /*additional code for the slideslow graphics customizations */
+ width:500%;
+ height:500px;
+ display:flex;
+}
+.slide input{
+    display: none;
+}
+.st{                 
+    width:20%;
+    transition: 2s;
+}
+.st img{
+    width: 1200px;
+    height: 880px;
+}
+.nav-m{
+    position: absolute;
+    width:800px;
+    margin-top: -40px;
+    display: flex;
+}
+.m-btn{
+    border:2px solid blue;
+    padding:5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:1s;
+    margin-top: 50%;
+    
+}
+.m-btn:not(:last-child){
+    margin-right:30px;
+}
+
+.m-btn:hover{
+    background-color: aqua;
+}
+/*ALL radio checked code below is for the manual slideshow option to work correctly */
+#radio1:checked ~.first{         
+    margin-left: 0;
+}
+#radio2:checked ~.first{         
+    margin-left: -20%;
+}
+#radio3:checked ~.first{        
+    margin-left: -40%;
+}
+#radio4:checked ~.first{
+    margin-left: -60%;
+}
+#radio5:checked ~.first{
+    margin-left: -80%;
+}
+/*ALL nav code below this text is for the auto slideshow function to work correctly.*/
+.nav-auto{
+    position:absolute;
+    width: 800px;
+    margin-top: 460px;
+    display: flex;
+    justify-content: center;
+}
+.nav-auto div {
+    border: 2px solid blueviolet;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    margin-top: 50%;
+    
+}
+.nav-auto div:not(:last-child){
+    margin-right: 30px;
+    justify-content: center;
+}
+/*ALL radio checked code below this text is for the auto scroll of the slideshow to work correctly */
+#radio1:checked ~ .nav-auto .a-b1{
+    background-color: antiquewhite;
+}
+#radio2:checked ~ .nav-auto .a-b2{
+    background-color: antiquewhite;
+}
+#radio3:checked ~ .nav-auto .a-b3{
+    background-color: antiquewhite;
+}
+#radio4:checked ~ .nav-auto .a-b4{
+    background-color: antiquewhite;
+}
+#radio5:checked ~ .nav-auto .a-b5{
+    background-color: antiquewhite;
+}
+
+
+
+h1 /*header 1's text graphics */
+{
+    font-size:490%;
+    color:yellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display:grid;
+    text-align: center;
+    font-weight:normal;
+    font-style: italic;
+}
+
+h2 /*header 2's text graphics */
+{
+    font-size:130%;
+  color:white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display:grid;
+  text-align: center;
+  font-weight:normal;
+}
+
+h3 /*header 3's text graphics */
+{ 
+    display:grid;
+    text-align: center;
+    font-weight:normal;
+    text-decoration: none;
+    font-size: 38px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+    padding: 5 119px;
+}
+
+
+h4 /*header 4's text graphics */
+{
+    color:white;
+    font-weight:normal;
+    font-size:small;
+}
+
+p{  /*all paragraph's font text graphics */
+    font-size:125%;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display:grid;
+    text-align: center;
+    font-weight:normal;
+}
